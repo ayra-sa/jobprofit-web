@@ -19,41 +19,45 @@
 
         <h2 class="text-xl mb-6 text-black">Masuk</h2>
 
-        <div class="flex flex-col gap-y-1 items-center mb-3">
-          <label for="email" class="font-semibold">Email</label>
-          <div class="bg-white border rounded-md p-2 flex items-center gap-x-1">
-            <span class="material-symbols-outlined"> delete </span>
-            <div class="w-[1px] h-5 bg-foreground"></div>
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="example@mail.com"
-              class="input-field"
-            />
+        <form action="" class="form">
+          <div class="flex flex-col gap-y-1 items-center mb-3">
+            <label for="email" class="font-semibold">Email</label>
+            <div class="bg-white border rounded-md p-2 flex items-center gap-x-1">
+              <span class="material-symbols-outlined"> delete </span>
+              <div class="w-[1px] h-5 bg-foreground"></div>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="example@mail.com"
+                class="input-field"
+              />
+            </div>
           </div>
-        </div>
-        <div class="flex flex-col gap-y-1 items-center mb-3">
-          <label for="email" class="font-semibold">Email</label>
-          <div class="bg-white border rounded-md p-2 flex items-center gap-x-1">
-            <span class="material-symbols-outlined"> delete </span>
-            <div class="w-[1px] h-5 bg-foreground"></div>
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="example@mail.com"
-              class="input-field"
-            />
+          <div class="flex flex-col gap-y-1 items-center mb-3">
+            <label for="password" class="font-semibold">Password</label>
+            <div class="bg-white border rounded-md p-2 flex items-center gap-x-1">
+              <span class="material-symbols-outlined"> delete </span>
+              <div class="w-[1px] h-5 bg-foreground"></div>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Password"
+                class="input-field"
+              />
+            </div>
           </div>
-        </div>
 
-        <a href="#" class="link">Lupa password?</a>
+          <a href="#" class="link text-center">Lupa password?</a>
+  
+          <button class="btn-primary w-full my-5">Masuk</button>
 
-        <button class="btn-primary w-[40%] my-5">Masuk</button>
-
-        <p>belum punya akun?</p>
-        <a href="./register.html" class="link">Daftar disini</a>
+          <div class="text-center">
+            <p>belum punya akun?</p>
+            <a href="./register.html" class="link">Daftar disini</a>
+          </div>
+        </form>
       </div>
     </div>
   </body>

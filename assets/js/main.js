@@ -14,6 +14,23 @@ document.querySelectorAll('.accordion-button').forEach(button => {
   });
 });
 
+//  Initialize Swiper
+let swiper = new Swiper(".swiper", {
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  // navigation: {
+  //   nextEl: ".swiper-button-next",
+  //   prevEl: ".swiper-button-prev",
+  // },
+});
+
+// document.querySelector(".modal-trigger").addEventListener("click", () => {
+//   const modal = document.querySelector(".modal")
+//   modal.classList.add("open")
+// })
+
 // Tab
 function openTab(evt, tabName) {
   let i, tabcontent, tablinks;
@@ -23,8 +40,8 @@ function openTab(evt, tabName) {
   }
   tablinks = document.getElementsByTagName("button");
   for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].classList.remove('bg-primary');
+    tablinks[i].classList.remove('bg-primary/80');
   }
   document.getElementById(tabName).classList.remove('hidden');
-  evt.currentTarget.classList.add('bg-primary');
+  evt.currentTarget.classList.add('bg-primary/80');
 }

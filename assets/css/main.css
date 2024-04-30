@@ -69,7 +69,7 @@
   }
 
   .form {
-    @apply flex flex-col max-w-[60%] mx-auto
+    @apply flex flex-col max-w-[70%] mx-auto
   }
 
   .link {
@@ -111,4 +111,25 @@
   .setting-content {
     @apply bg-white px-3 py-5 hidden
   }
+
+  .modal {
+    @apply absolute bg-black/20 p-5 inset-0 hidden
+  }
+
+  .modal.open {
+    @apply block
+  }
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-wrapper {
+  padding-bottom: 50px;
+}
+
+.swiper-pagination {
+  bottom: 0 !important;
 }
