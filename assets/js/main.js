@@ -14,22 +14,26 @@ document.querySelectorAll('.accordion-button').forEach(button => {
   });
 });
 
-//  Initialize Swiper
-let swiper = new Swiper(".swiper", {
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  // navigation: {
-  //   nextEl: ".swiper-button-next",
-  //   prevEl: ".swiper-button-prev",
-  // },
+// Template color picker
+document.querySelector('.color-items')?.addEventListener('click', function(event) {
+  if (event.target.closest('.color-item')) {
+    document.querySelectorAll('.color-item').forEach(item => {
+      item.classList.remove('active');
+    });
+    event.target.closest('.color-item').classList.add('active');
+  }
 });
 
-// document.querySelector(".modal-trigger").addEventListener("click", () => {
-//   const modal = document.querySelector(".modal")
-//   modal.classList.add("open")
-// })
+function openModal() {
+  // Tampilkan backdrop modal
+  document.getElementById('modalBackdrop').style.display = 'block';
+}
+
+// Fungsi untuk menutup modal
+function closeModal() {
+  // Sembunyikan backdrop modal
+  document.getElementById('modalBackdrop').style.display = 'none';
+}
 
 // Tab
 function openTab(evt, tabName) {
@@ -45,3 +49,20 @@ function openTab(evt, tabName) {
   document.getElementById(tabName).classList.remove('hidden');
   evt.currentTarget.classList.add('bg-primary/80');
 }
+
+// Settings
+document.querySelectorAll('.setting-button').forEach(button => {
+  button.addEventListener('click', () => {
+    const item = button.closest('.setting-item');
+    const isOpen = item.classList.contains('open');
+
+    document.querySelectorAll('.setting-item').forEach(accItem => {
+      accItem.classList.remove('open');
+      // accItem.classList.add('open');
+    });
+
+    if (!isOpen) {
+      item.classList.add('open');
+    }
+  });
+});

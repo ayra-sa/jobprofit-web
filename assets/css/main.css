@@ -18,16 +18,22 @@
     --secondary-foreground: 300 100% 100%;
     --muted: 240 4.8% 95.9%;
     --muted-foreground: 240 3.8% 46.1%;
-    --accent: 240 4.8% 95.9%;
-    --accent-foreground: 240 5.9% 10%;
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 98%;
     --pending: 0 0% 34%;
     --success: 128 52% 33%;
     --border: 240 5.9% 90%;
     --input: 240 5.9% 90%;
-    --ring: 142.1 76.2% 36.3%;
-    --radius: 0.5rem;
+    --theme-1: #FE0000;
+    --theme-2: #FD5308;
+    --theme-3: #FB9900;
+    --theme-4: #F9BC02;
+    --theme-5: #0490CF;
+    --theme-6: #4AB102;
+    --theme-7: #BDD800;
+    --theme-8: #FFFF00;
+    --theme-9: #0000FE;
+    --theme-10: #4001A7;
+    --theme-11: #C90044;
+    --theme-12: #F300F4;
   }
 }
 
@@ -81,7 +87,7 @@
   }
 
   .card {
-    @apply bg-white rounded-2xl p-4
+    @apply bg-white rounded-2xl px-4 py-7 mr-5 min-h-[200px]
   }
 
   .accordion-item {
@@ -105,11 +111,23 @@
   }
 
   .setting-item {
+    @apply bg-primary border-b border-b-slate-400
+  }
 
+  .setting-item.open .setting-content {
+    @apply block
+  }
+
+  .setting-item.open .setting-button span {
+    @apply -rotate-90
+  }
+
+  .setting-button {
+    @apply p-3 font-semibold flex items-center text-white justify-between cursor-pointer
   }
 
   .setting-content {
-    @apply bg-white px-3 py-5 hidden
+    @apply bg-white p-5 hidden
   }
 
   .modal {
@@ -118,6 +136,70 @@
 
   .modal.open {
     @apply block
+  }
+
+  .color-item {
+    @apply h-10 border border-black rounded-md
+  }
+
+  .color-item div {
+    @apply hidden
+  }
+
+  .color-item.active {
+    @apply flex justify-center items-center
+  }
+
+  .color-item.active div {
+    @apply flex justify-center items-center
+  }
+
+  .theme-1 {
+    background-color: var(--theme-1);
+  }
+
+  .theme-2 {
+    background-color: var(--theme-2);
+  }
+
+  .theme-3 {
+    background-color: var(--theme-3);
+  }
+
+  .theme-4 {
+    background-color: var(--theme-4);
+  }
+
+  .theme-5 {
+    background-color: var(--theme-5);
+  }
+
+  .theme-6 {
+    background-color: var(--theme-6);
+  }
+
+  .theme-7 {
+    background-color: var(--theme-7);
+  }
+
+  .theme-8 {
+    background-color: var(--theme-8);
+  }
+
+  .theme-9 {
+    background-color: var(--theme-9);
+  }
+
+  .theme-10 {
+    background-color: var(--theme-10);
+  }
+
+  .theme-11 {
+    background-color: var(--theme-11);
+  }
+
+  .theme-12 {
+    background-color: var(--theme-12);
   }
 }
 

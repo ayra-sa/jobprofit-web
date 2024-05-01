@@ -21,8 +21,8 @@
       <div class="p-5 pb-20">
         <!-- Profil Card -->
         <div class="bg-white flex flex-col items-center py-5 rounded-3xl shadow-md">
-          <div class="shadow-lg mb-4 p-2 rounded-md">
-            <img src="./assets/images/vite.svg" alt="image">
+          <div class="shadow-lg mb-4 p-1 w-16 h-16 bg-white rounded-md">
+            <img src="./assets/images/sample.jpg" alt="image" class="w-full h-full rounded-md">
           </div>
   
           <h2 class="text-black text-lg">First & Last Name</h2>
@@ -42,49 +42,257 @@
 
         <!-- Settings -->
         <div class="relative rounded-3xl overflow-hidden mt-7">
-          <div class="bg-primary border-b border-b-slate-400">
-            <div class="p-3 flex items-center text-white justify-between cursor-pointer">
+          <!-- Profile Setting -->
+          <div class="setting-item">
+            <div class="setting-button">
               <p>Profil</p>
               <span class="material-symbols-outlined"> arrow_left </span>
             </div>
             <div class="setting-content">
-              <p>Lorem, ipsum dolor.</p>
+              <div class="flex flex-col gap-y-1 mb-3">
+                <label for="firstName" class="font-semibold">Nama Awal <span class="text-red-400">*</span></label>
+                <div class="bg-white border rounded-md p-2 flex items-center gap-x-1">
+                  <span class="material-symbols-outlined"> delete </span>
+                  <div class="w-[1px] h-5 bg-foreground"></div>
+                  <input
+                    type="text"
+                    name="firstName"
+                    id="firstName"
+                    placeholder="Nama Awal"
+                    class="input-field"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="flex flex-col gap-y-1 mb-3">
+                <label for="lastName" class="font-semibold">Nama Akhir</label>
+                <div class="bg-white border rounded-md p-2 flex items-center gap-x-1">
+                  <span class="material-symbols-outlined"> delete </span>
+                  <div class="w-[1px] h-5 bg-foreground"></div>
+                  <input
+                    type="text"
+                    name="lastName"
+                    id="lastName"
+                    placeholder="Nama Akhir"
+                    class="input-field"
+                  />
+                </div>
+              </div>
+
+              <button class="btn-primary">Simpan</button>
             </div>
           </div>
-          <div class="bg-primary border-b border-b-slate-400">
-            <div class="p-3 flex items-center text-white justify-between cursor-pointer">
-              <p>Profil</p>
+
+          <!-- Password Setting -->
+          <div class="setting-item">
+            <div class="setting-button">
+              <p>Password</p>
               <span class="material-symbols-outlined"> arrow_left </span>
             </div>
             <div class="setting-content">
-              <p>Lorem, ipsum dolor.</p>
+              <div class="flex flex-col gap-y-1 mb-3">
+                <label for="oldPassword" class="font-semibold">Password lama <span class="text-red-400">*</span></label>
+                <div class="bg-white border rounded-md p-2 flex items-center gap-x-1">
+                  <span class="material-symbols-outlined"> delete </span>
+                  <div class="w-[1px] h-5 bg-foreground"></div>
+                  <input
+                    type="password"
+                    name="oldPassword"
+                    id="oldPassword"
+                    placeholder="Password lama"
+                    class="input-field"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="flex flex-col gap-y-1 mb-3">
+                <label for="newPassword" class="font-semibold">Password baru <span class="text-red-400">*</span></label>
+                <div class="bg-white border rounded-md p-2 flex items-center gap-x-1">
+                  <span class="material-symbols-outlined"> delete </span>
+                  <div class="w-[1px] h-5 bg-foreground"></div>
+                  <input
+                    type="password"
+                    name="newPassword"
+                    id="newPassword"
+                    placeholder="Password baru"
+                    class="input-field"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="flex flex-col gap-y-1 mb-3">
+                <label for="repeatPassword" class="font-semibold">Ketik ulang password baru <span class="text-red-400">*</span></label>
+                <div class="flex items-center w-full justify-between gap-x-2">
+                  <div class="bg-white border w-full rounded-md p-2 flex items-center gap-x-1">
+                    <span class="material-symbols-outlined"> delete </span>
+                    <div class="w-[1px] h-5 bg-foreground"></div>
+                    <input
+                      type="password"
+                      name="repeatPassword"
+                      id="repeatPassword"
+                      placeholder="Ulangi Password"
+                      class="input-field"
+                      required
+                    />
+                  </div>
+                  <span class="material-symbols-outlined"> delete </span>
+                </div>
+              </div>
+
+              <button class="btn-primary">Simpan</button>
             </div>
           </div>
-          <div class="bg-primary border-b border-b-slate-400">
-            <div class="p-3 flex items-center text-white justify-between cursor-pointer">
-              <p>Profil</p>
+
+          <!-- Rekening Bank Setting -->
+          <div class="setting-item">
+            <div class="setting-button">
+              <p>Rekening Bank</p>
               <span class="material-symbols-outlined"> arrow_left </span>
             </div>
             <div class="setting-content">
-              <p>Lorem, ipsum dolor.</p>
+              <div class="flex flex-col gap-y-1 mb-3">
+                <label for="bank" class="font-semibold">Bank <span class="text-red-400">*</span></label>
+                <div class="bg-white border rounded-md p-2 flex items-center gap-x-1">
+                  <span class="material-symbols-outlined"> delete </span>
+                  <div class="w-[1px] h-5 bg-foreground"></div>
+                  <select name="bank" id="bank" required class="input-field w-full">
+                    <option value="1">Bank ABC</option>
+                    <option value="2">Bank ABCD</option>
+                    <option value="3">Bank DEF</option>
+                    <option value="4">Bank GHD</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="flex flex-col gap-y-1 mb-3">
+                <label for="accountNumber" class="font-semibold">No Rekening <span class="text-red-400">*</span></label>
+                <div class="bg-white border rounded-md p-2 flex items-center gap-x-1">
+                  <span class="material-symbols-outlined"> delete </span>
+                  <div class="w-[1px] h-5 bg-foreground"></div>
+                  <input
+                    type="number"
+                    name="accountNumber"
+                    id="accountNumber"
+                    placeholder="No rekening"
+                    class="input-field"
+                    required
+                  />
+                </div>
+              </div>
+              
+              <div class="flex flex-col gap-y-1 mb-3">
+                <label for="name" class="font-semibold">Atas nama <span class="text-red-400">*</span></label>
+                <div class="bg-white border rounded-md p-2 flex items-center gap-x-1">
+                  <span class="material-symbols-outlined"> delete </span>
+                  <div class="w-[1px] h-5 bg-foreground"></div>
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="Atas nama"
+                    class="input-field"
+                    required
+                  />
+                </div>
+              </div>
+
+              <button class="btn-primary">Simpan</button>
             </div>
           </div>
-          <div class="bg-primary border-b border-b-slate-400">
-            <div class="p-3 flex items-center text-white justify-between cursor-pointer">
-              <p>Profil</p>
+
+          <!-- Social Media Setting -->
+          <div class="setting-item border-b-0">
+            <div class="setting-button">
+              <p>Social Media</p>
               <span class="material-symbols-outlined"> arrow_left </span>
             </div>
             <div class="setting-content">
-              <p>Lorem, ipsum dolor.</p>
-            </div>
-          </div>
-          <div class="bg-primary border-b border-b-slate-400">
-            <div class="p-3 flex items-center text-white justify-between cursor-pointer">
-              <p>Profil</p>
-              <span class="material-symbols-outlined"> arrow_left </span>
-            </div>
-            <div class="setting-content">
-              <p>Lorem, ipsum dolor.</p>
+              <div class="flex gap-x-3 mb-3 items-end">
+                <div>
+                  <label for="instagram" class="font-semibold mb-1 block">Instagram <span class="text-red-400">*</span></label>
+                  <div class="bg-white border rounded-md p-2 flex items-center gap-x-1">
+                    <span class="material-symbols-outlined"> delete </span>
+                    <div class="w-[1px] h-5 bg-foreground"></div>
+                    <input
+                      type="text"
+                      name="instagram"
+                      id="instagram"
+                      placeholder="Instagram"
+                      class="input-field"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <label for="igFollowers" class="mb-1 block text-sm">Followers</label>
+                  <select name="igFollowers" id="igFollowers" required class="bg-white border rounded-md p-2 w-full">
+                    <option value="1">5k+</option>
+                    <option value="2">4k</option>
+                    <option value="3">1k</option>
+                    <option value="4">500</option>
+                  </select>
+                </div>
+              </div>
+              
+              <div class="flex gap-x-3 mb-3 items-end">
+                <div>
+                  <label for="tiktok" class="font-semibold mb-1 block">tiktok <span class="text-red-400">*</span></label>
+                  <div class="bg-white border rounded-md p-2 flex items-center gap-x-1">
+                    <span class="material-symbols-outlined"> delete </span>
+                    <div class="w-[1px] h-5 bg-foreground"></div>
+                    <input
+                      type="text"
+                      name="tiktok"
+                      id="tiktok"
+                      placeholder="tiktok"
+                      class="input-field"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <label for="tiktokFollowers" class="mb-1 block text-sm">Followers</label>
+                  <select name="tiktokFollowers" id="tiktokFollowers" required class="bg-white border rounded-md p-2 w-full">
+                    <option value="1">5k+</option>
+                    <option value="2">4k</option>
+                    <option value="3">1k</option>
+                    <option value="4">500</option>
+                  </select>
+                </div>
+              </div>
+              
+              <div class="flex gap-x-3 mb-3 items-end">
+                <div>
+                  <label for="youtube" class="font-semibold mb-1 block">youtube <span class="text-red-400">*</span></label>
+                  <div class="bg-white border rounded-md p-2 flex items-center gap-x-1">
+                    <span class="material-symbols-outlined"> delete </span>
+                    <div class="w-[1px] h-5 bg-foreground"></div>
+                    <input
+                      type="text"
+                      name="youtube"
+                      id="youtube"
+                      placeholder="youtube"
+                      class="input-field"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <label for="youtubeFollowers" class="mb-1 block text-sm">Followers</label>
+                  <select name="youtubeFollowers" id="youtubeFollowers" required class="bg-white border rounded-md p-2 w-full">
+                    <option value="1">5k+</option>
+                    <option value="2">4k</option>
+                    <option value="3">1k</option>
+                    <option value="4">500</option>
+                  </select>
+                </div>
+              </div>
+
+              <button class="btn-primary">Simpan</button>
             </div>
           </div>
         </div>
@@ -126,5 +334,7 @@
       </div>
       <!-- Navigation -->
     </div>
+
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>
