@@ -608,9 +608,9 @@ h1,h2,h3{
   padding-left: 2rem;
 }
 
-@media (min-width: 1400px){
+@media (min-width: 370px){
   .container{
-    max-width: 1400px;
+    max-width: 370px;
   }
 }
 
@@ -675,8 +675,18 @@ h1,h2,h3{
   margin-left: auto;
   margin-right: auto;
   display: flex;
-  max-width: 70%;
+  max-width: 80%;
   flex-direction: column;
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+@media (min-width: 370px){
+  .form{
+    max-width: 70%;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
 }
 
 .link{
@@ -700,7 +710,7 @@ h1,h2,h3{
 }
 
 .card{
-  margin-right: 1.25rem;
+  margin-right: 0.75rem;
   min-height: 200px;
   border-radius: 1rem;
   --tw-bg-opacity: 1;
@@ -745,6 +755,15 @@ h1,h2,h3{
   --tw-border-opacity: 1;
   border-bottom-color: rgb(148 163 184 / var(--tw-border-opacity));
   background-color: hsl(var(--primary));
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+@media (min-width: 370px){
+  .setting-item{
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
 }
 
 .setting-item.open .setting-content{
@@ -1035,6 +1054,14 @@ h1,h2,h3{
 
 .w-\[1px\]{
   width: 1px;
+}
+
+.w-\[30\%\]{
+  width: 30%;
+}
+
+.w-\[70\%\]{
+  width: 70%;
 }
 
 .w-\[80\%\]{
@@ -1489,9 +1516,34 @@ h1,h2,h3{
   bottom: 0 !important;
 }
 
+@media (min-width: 370px){
+  .min-\[370px\]\:text-base{
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .min-\[370px\]\:text-lg{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .min-\[370px\]\:text-4xl{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+}
+
 @media (min-width: 768px){
+  .md\:w-\[20\%\]{
+    width: 20%;
+  }
+
   .md\:w-\[500px\]{
     width: 500px;
+  }
+
+  .md\:w-\[80\%\]{
+    width: 80%;
   }
 
   .md\:text-base{

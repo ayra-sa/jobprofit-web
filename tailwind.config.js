@@ -6,7 +6,7 @@ module.exports = {
       center: true,
       padding: "2rem",
       screens: {
-        "2xl": "1400px",
+        "xs": "370px",
       },
     },
     extend: {
@@ -47,6 +47,9 @@ module.exports = {
           foreground: "hsl(var(--code-label-foreground))",
         }
       },
+      flex: {
+        '2': '2 2 0%'
+      }
     },
   },
   plugins: [],
