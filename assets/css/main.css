@@ -16,12 +16,8 @@
     --primary-foreground: 300 100% 100%;
     --secondary: 24 99% 48%;
     --secondary-foreground: 300 100% 100%;
-    --muted: 240 4.8% 95.9%;
-    --muted-foreground: 240 3.8% 46.1%;
     --pending: 0 0% 34%;
     --success: 128 52% 33%;
-    --border: 240 5.9% 90%;
-    --input: 240 5.9% 90%;
     --theme-1: #FE0000;
     --theme-2: #FD5308;
     --theme-3: #FB9900;
@@ -67,7 +63,7 @@
   }
 
   .input-field {
-    @apply bg-transparent focus:border-none focus:outline-none
+    @apply bg-transparent focus:border-none focus:outline-none w-full
   }
 
   .label-input {
