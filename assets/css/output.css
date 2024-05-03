@@ -458,8 +458,12 @@ video {
   --code-label-foreground: 24 99% 48%;
   --primary: 172 26% 30%;
   --primary-foreground: 300 100% 100%;
+  --primary-hover: 171 26% 21%;
+  --primary-active: 174 25% 15%;
   --secondary: 24 99% 48%;
   --secondary-foreground: 300 100% 100%;
+  --secondary-hover: 24 100% 38%;
+  --secondary-active: 24 100% 33%;
   --pending: 0 0% 34%;
   --success: 128 52% 33%;
   --theme-1: #FE0000;
@@ -635,6 +639,19 @@ h1,h2,h3{
   padding-right: 0.75rem;
   font-weight: 600;
   color: hsl(var(--primary-foreground));
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+.btn-primary:hover{
+  background-color: hsl(var(--primary-hover));
+}
+
+.btn-primary:active{
+  background-color: hsl(var(--primary-active));
 }
 
 .btn-secondary{
@@ -646,6 +663,19 @@ h1,h2,h3{
   padding-right: 0.75rem;
   font-weight: 600;
   color: hsl(var(--secondary-foreground));
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+.btn-secondary:hover{
+  background-color: hsl(var(--secondary-hover));
+}
+
+.btn-secondary:active{
+  background-color: hsl(var(--secondary-active));
 }
 
 .input-field{
@@ -687,6 +717,21 @@ h1,h2,h3{
   --tw-text-opacity: 1;
   color: rgb(37 99 235 / var(--tw-text-opacity));
   text-decoration-line: underline;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+.link:hover{
+  --tw-text-opacity: 1;
+  color: rgb(29 78 216 / var(--tw-text-opacity));
+}
+
+.link:active{
+  --tw-text-opacity: 1;
+  color: rgb(30 64 175 / var(--tw-text-opacity));
 }
 
 .code-label{
@@ -1498,6 +1543,18 @@ h1,h2,h3{
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.transition{
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.duration-300{
+  transition-duration: 300ms;
+}
+
 .swiper {
   width: 100%;
   height: 100%;
@@ -1509,6 +1566,55 @@ h1,h2,h3{
 
 .swiper-pagination {
   bottom: 0 !important;
+}
+
+.hover\:border-secondary-hover:hover{
+  border-color: hsl(var(--secondary-hover));
+}
+
+.hover\:bg-secondary:hover{
+  background-color: hsl(var(--secondary));
+}
+
+.hover\:bg-primary\/25:hover{
+  background-color: hsl(var(--primary) / 0.25);
+}
+
+.hover\:text-primary-hover:hover{
+  color: hsl(var(--primary-hover));
+}
+
+.hover\:text-secondary-hover:hover{
+  color: hsl(var(--secondary-hover));
+}
+
+.hover\:text-white:hover{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.hover\:text-secondary-foreground:hover{
+  color: hsl(var(--secondary-foreground));
+}
+
+.active\:border-secondary-active:active{
+  border-color: hsl(var(--secondary-active));
+}
+
+.active\:bg-secondary-hover:active{
+  background-color: hsl(var(--secondary-hover));
+}
+
+.active\:bg-primary\/35:active{
+  background-color: hsl(var(--primary) / 0.35);
+}
+
+.active\:text-primary-active:active{
+  color: hsl(var(--primary-active));
+}
+
+.active\:text-secondary-active:active{
+  color: hsl(var(--secondary-active));
 }
 
 @media (min-width: 370px){
