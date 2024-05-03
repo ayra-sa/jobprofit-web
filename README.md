@@ -49,4 +49,4 @@ anda juga bisa mengedit style icon dengan menambahkan class [`tailwindcss`](http
 
 ## Learn More
 
-- [tailwindcss Documentation](https://tailwindcss.com/docs/installation) - dokumentasi taialwindcss
+- [tailwindcss Documentation](https://tailwindcss.com/docs/installation) - dokumentasi tailwindcss
