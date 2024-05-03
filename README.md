@@ -14,7 +14,8 @@ sebelum anda memulai edit di `assets/css/main.css` jalankan dahulu perintah ini 
 npx tailwindcss -i ./assets/css/main.css -o ./assets/css/output.css --watch
 ```
 
-jika anda ingin mengubah global variables seperti colors palette, anda bisa mengubah pada `assets/css/main.css`, ada di bagian atas, di [`:root`] :
+
+jika anda ingin mengubah global variables seperti colors palette, anda bisa mengubah pada `assets/css/main.css`, ada di bagian `:root` :
 ``` bash
 :root {
     --font: "Poppins", sans-serif;
@@ -31,6 +32,7 @@ jika anda ingin mengubah global variables seperti colors palette, anda bisa meng
     ...
   }
 ```
+
 
 Project ini menggunakan [`Material Symbols & Icons - Google Fonts`](https://fonts.google.com/icons)
 
