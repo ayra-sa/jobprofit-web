@@ -943,8 +943,32 @@ h1,h2,h3{
   right: 1.25rem;
 }
 
+.top-28{
+  top: 7rem;
+}
+
 .top-auto{
   top: auto;
+}
+
+.top-\[20\%\]{
+  top: 20%;
+}
+
+.top-\[13\%\]{
+  top: 13%;
+}
+
+.bottom-auto{
+  bottom: auto;
+}
+
+.top-20{
+  top: 5rem;
+}
+
+.top-40{
+  top: 10rem;
 }
 
 .z-40{
@@ -988,10 +1012,6 @@ h1,h2,h3{
 
 .-mt-\[13\%\]{
   margin-top: -13%;
-}
-
-.-mt-\[9\%\]{
-  margin-top: -9%;
 }
 
 .mb-1{
@@ -1046,6 +1066,22 @@ h1,h2,h3{
   margin-top: 1.75rem;
 }
 
+.mb-14{
+  margin-bottom: 3.5rem;
+}
+
+.mt-4{
+  margin-top: 1rem;
+}
+
+.mb-20{
+  margin-bottom: 5rem;
+}
+
+.mb-52{
+  margin-bottom: 13rem;
+}
+
 .block{
   display: block;
 }
@@ -1082,6 +1118,10 @@ h1,h2,h3{
   height: 100vh;
 }
 
+.min-h-screen{
+  min-height: 100vh;
+}
+
 .w-16{
   width: 4rem;
 }
@@ -1112,11 +1152,6 @@ h1,h2,h3{
 
 .w-\[90\%\]{
   width: 90%;
-}
-
-.w-fit{
-  width: -moz-fit-content;
-  width: fit-content;
 }
 
 .w-full{
@@ -1389,6 +1424,10 @@ h1,h2,h3{
   padding-left: 1.25rem;
 }
 
+.pb-60{
+  padding-bottom: 15rem;
+}
+
 .text-center{
   text-align: center;
 }
@@ -1557,7 +1596,7 @@ h1,h2,h3{
 
 .swiper {
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
 }
 
 .swiper-wrapper {
@@ -1572,16 +1611,20 @@ h1,h2,h3{
   border-color: hsl(var(--secondary-hover));
 }
 
-.hover\:bg-secondary:hover{
-  background-color: hsl(var(--secondary));
-}
-
 .hover\:bg-primary\/25:hover{
   background-color: hsl(var(--primary) / 0.25);
 }
 
+.hover\:bg-secondary:hover{
+  background-color: hsl(var(--secondary));
+}
+
 .hover\:text-primary-hover:hover{
   color: hsl(var(--primary-hover));
+}
+
+.hover\:text-secondary-foreground:hover{
+  color: hsl(var(--secondary-foreground));
 }
 
 .hover\:text-secondary-hover:hover{
@@ -1593,20 +1636,16 @@ h1,h2,h3{
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.hover\:text-secondary-foreground:hover{
-  color: hsl(var(--secondary-foreground));
-}
-
 .active\:border-secondary-active:active{
   border-color: hsl(var(--secondary-active));
 }
 
-.active\:bg-secondary-hover:active{
-  background-color: hsl(var(--secondary-hover));
-}
-
 .active\:bg-primary\/35:active{
   background-color: hsl(var(--primary) / 0.35);
+}
+
+.active\:bg-secondary-hover:active{
+  background-color: hsl(var(--secondary-hover));
 }
 
 .active\:text-primary-active:active{
